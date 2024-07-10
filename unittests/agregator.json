@@ -1,0 +1,1736 @@
+{
+	"timestamp": {
+		"oldestTimestamp": 1711629626.314,
+		"timeSinceOldest": 109.45385718345642
+	},
+	"cluster": {
+		"icos-cluster-2a": {
+			"type": "ocm",
+			"uuid": "08c66cd5-ae67-4336-99c8-9016cb2b5546",
+			"name": "icos-cluster-2a",
+			"serviceLevelAgreement": {},
+			"API": {},
+			"node": {
+				"sim-k8s-master": {
+					"type": "ocm",
+					"uuid": "a04a67ba78534559840cfc8b9101f218",
+					"name": "sim-k8s-master",
+					"location": {},
+					"vulnerabilities": {
+						"Critical": 6,
+						"High": 14,
+						"Low": 11,
+						"Medium": 25
+					},
+					"ScaScore": 42,
+					"staticMetrics": {
+						"cpuArchitecture": "x86_64",
+						"cpuCores": 1,
+						"RAMMemory": 8325951488
+					},
+					"dynamicMetrics": {
+						"freeRAM": 348254208,
+						"availableStorage": {}
+					}
+				},
+				"sim-k8s-worker1": {
+					"type": "ocm",
+					"uuid": "d7b51655a3a748b180c145af90429e5a",
+					"name": "sim-k8s-worker1",
+					"location": {},
+					"vulnerabilities": {
+						"Critical": 6,
+						"High": 14,
+						"Low": 11,
+						"Medium": 25
+					},
+					"ScaScore": 42,
+					"staticMetrics": {
+						"cpuArchitecture": "x86_64",
+						"cpuCores": 4,
+						"RAMMemory": 8325169152
+					},
+					"dynamicMetrics": {
+						"freeRAM": 2912129024,
+						"availableStorage": {}
+					}
+				}
+			},
+			"network": {},
+			"pod": {
+				"cilium-9b4pl": {
+					"name": "cilium-9b4pl",
+					"ip": "10.160.3.187",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"cilium-agent": {
+							"name": "cilium-agent",
+							"cpuUsage": 0.004566766
+						}
+					}
+				},
+				"cilium-d2rdh": {
+					"name": "cilium-d2rdh",
+					"ip": "10.160.3.188",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"cilium-agent": {
+							"name": "cilium-agent",
+							"cpuUsage": 0.013352362
+						}
+					}
+				},
+				"cilium-operator-94687ffb9-v9l22": {
+					"name": "cilium-operator-94687ffb9-v9l22",
+					"ip": "10.160.3.188",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"cilium-operator": {
+							"name": "cilium-operator",
+							"cpuUsage": 0.001430339
+						}
+					}
+				},
+				"cilium-operator-94687ffb9-vmgtj": {
+					"name": "cilium-operator-94687ffb9-vmgtj",
+					"ip": "10.160.3.187",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"cilium-operator": {
+							"name": "cilium-operator",
+							"cpuUsage": 0.002716404
+						}
+					}
+				},
+				"coredns-77f7cc69db-m9qg5": {
+					"name": "coredns-77f7cc69db-m9qg5",
+					"ip": "10.233.65.191",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"coredns": {
+							"name": "coredns",
+							"cpuUsage": 0.001437867
+						}
+					}
+				},
+				"coredns-77f7cc69db-v4klx": {
+					"name": "coredns-77f7cc69db-v4klx",
+					"ip": "10.233.64.165",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"coredns": {
+							"name": "coredns",
+							"cpuUsage": 0.002436388
+						}
+					}
+				},
+				"dns-autoscaler-8576bb9f5b-sfp5f": {
+					"name": "dns-autoscaler-8576bb9f5b-sfp5f",
+					"ip": "10.233.65.69",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"autoscaler": {
+							"name": "autoscaler",
+							"cpuUsage": 0.000960349
+						}
+					}
+				},
+				"helm-controller-794c4dfdc5-w98bj": {
+					"name": "helm-controller-794c4dfdc5-w98bj",
+					"ip": "10.233.64.211",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"manager": {
+							"name": "manager",
+							"cpuUsage": 0.001235527
+						}
+					}
+				},
+				"image-automation-controller-96c66dff7-lsmfn": {
+					"name": "image-automation-controller-96c66dff7-lsmfn",
+					"ip": "10.233.64.102",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"manager": {
+							"name": "manager",
+							"cpuUsage": 0.00125903
+						}
+					}
+				},
+				"image-reflector-controller-57d6d87c4f-xrljg": {
+					"name": "image-reflector-controller-57d6d87c4f-xrljg",
+					"ip": "10.233.64.75",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"manager": {
+							"name": "manager",
+							"cpuUsage": 0.014243323
+						}
+					}
+				},
+				"klusterlet-fdc97bbcf-p52m7": {
+					"name": "klusterlet-fdc97bbcf-p52m7",
+					"ip": "10.233.64.67",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"klusterlet": {
+							"name": "klusterlet",
+							"cpuUsage": 0.004945819
+						}
+					}
+				},
+				"klusterlet-registration-agent-56f4c4454f-tz5xc": {
+					"name": "klusterlet-registration-agent-56f4c4454f-tz5xc",
+					"ip": "10.233.64.128",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"registration-controller": {
+							"name": "registration-controller",
+							"cpuUsage": 0.005677189
+						}
+					}
+				},
+				"klusterlet-work-agent-c57c45bfb-f9dc5": {
+					"name": "klusterlet-work-agent-c57c45bfb-f9dc5",
+					"ip": "10.233.64.251",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"klusterlet-manifestwork-agent": {
+							"name": "klusterlet-manifestwork-agent",
+							"cpuUsage": 0.006426803
+						}
+					}
+				},
+				"kube-apiserver-master": {
+					"name": "kube-apiserver-master",
+					"ip": "10.160.3.187",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"kube-apiserver": {
+							"name": "kube-apiserver"
+						}
+					}
+				},
+				"kube-controller-manager-master": {
+					"name": "kube-controller-manager-master",
+					"ip": "10.160.3.187",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"kube-controller-manager": {
+							"name": "kube-controller-manager"
+						}
+					}
+				},
+				"kube-proxy-qmhtd": {
+					"name": "kube-proxy-qmhtd",
+					"ip": "10.160.3.187",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"kube-proxy": {
+							"name": "kube-proxy",
+							"cpuUsage": 0.000284989
+						}
+					}
+				},
+				"kube-proxy-vzzgf": {
+					"name": "kube-proxy-vzzgf",
+					"ip": "10.160.3.188",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"kube-proxy": {
+							"name": "kube-proxy",
+							"cpuUsage": 0.014578933
+						}
+					}
+				},
+				"kube-scheduler-master": {
+					"name": "kube-scheduler-master",
+					"ip": "10.160.3.187",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"kube-scheduler": {
+							"name": "kube-scheduler"
+						}
+					}
+				},
+				"kustomize-controller-68dc6d6bcd-tcktr": {
+					"name": "kustomize-controller-68dc6d6bcd-tcktr",
+					"ip": "10.233.64.185",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"manager": {
+							"name": "manager",
+							"cpuUsage": 0.00137899
+						}
+					}
+				},
+				"nginx-proxy-node1": {
+					"name": "nginx-proxy-node1",
+					"ip": "10.160.3.188",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"nginx-proxy": {
+							"name": "nginx-proxy"
+						}
+					}
+				},
+				"nodelocaldns-28fqp": {
+					"name": "nodelocaldns-28fqp",
+					"ip": "10.160.3.187",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"node-cache": {
+							"name": "node-cache",
+							"cpuUsage": 0.001849882
+						}
+					}
+				},
+				"nodelocaldns-vjxkh": {
+					"name": "nodelocaldns-vjxkh",
+					"ip": "10.160.3.188",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"node-cache": {
+							"name": "node-cache",
+							"cpuUsage": 0.002420189
+						}
+					}
+				},
+				"notification-controller-5bb6647999-jnth8": {
+					"name": "notification-controller-5bb6647999-jnth8",
+					"ip": "10.233.64.68",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"manager": {
+							"name": "manager",
+							"cpuUsage": 0.001349342
+						}
+					}
+				},
+				"source-controller-d44985458-lv2pm": {
+					"name": "source-controller-d44985458-lv2pm",
+					"ip": "10.233.64.64",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"manager": {
+							"name": "manager",
+							"cpuUsage": 0.002029518
+						}
+					}
+				},
+				"telagent-kube-state-metrics-7b4b6ddc97-sg4xf": {
+					"name": "telagent-kube-state-metrics-7b4b6ddc97-sg4xf",
+					"ip": "10.233.64.218",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"kube-state-metrics": {
+							"name": "kube-state-metrics",
+							"cpuUsage": 0.001863868
+						}
+					}
+				},
+				"telagent-prometheus-node-exporter-4jm92": {
+					"name": "telagent-prometheus-node-exporter-4jm92",
+					"ip": "10.160.3.188",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"node-exporter": {
+							"name": "node-exporter",
+							"cpuUsage": 0.000074175
+						}
+					}
+				},
+				"telagent-prometheus-node-exporter-x2kwp": {
+					"name": "telagent-prometheus-node-exporter-x2kwp",
+					"ip": "10.160.3.187",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"node-exporter": {
+							"name": "node-exporter",
+							"cpuUsage": 0.002401333
+						}
+					}
+				},
+				"telagent-telemetry-agent-otel-node-agent-6w78p": {
+					"name": "telagent-telemetry-agent-otel-node-agent-6w78p",
+					"ip": "10.233.64.144",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"otel-collector": {
+							"name": "otel-collector",
+							"cpuUsage": 0.007380802
+						}
+					}
+				},
+				"telagent-telemetry-agent-otel-node-agent-qs4vq": {
+					"name": "telagent-telemetry-agent-otel-node-agent-qs4vq",
+					"ip": "10.233.65.13",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"otel-collector": {
+							"name": "otel-collector",
+							"cpuUsage": 0.005552552
+						}
+					}
+				},
+				"telagent-telemetry-agent-otel-target-allocator-85cfcfbd4b-q4n66": {
+					"name": "telagent-telemetry-agent-otel-target-allocator-85cfcfbd4b-q4n66",
+					"ip": "10.233.64.161",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"telagent-telemetry-agent-otel-target-allocator": {
+							"name": "telagent-telemetry-agent-otel-target-allocator",
+							"cpuUsage": 0.001527633
+						}
+					}
+				},
+				"telagent-telemetry-agent-telemetruum-kube-agent-k8blr": {
+					"name": "telagent-telemetry-agent-telemetruum-kube-agent-k8blr",
+					"ip": "10.160.3.187",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"telagent-telemetry-agent-telemetruum-kube-agent": {
+							"name": "telagent-telemetry-agent-telemetruum-kube-agent",
+							"cpuUsage": 0.001230274
+						}
+					}
+				},
+				"telagent-telemetry-agent-telemetruum-kube-agent-xtb2j": {
+					"name": "telagent-telemetry-agent-telemetruum-kube-agent-xtb2j",
+					"ip": "10.160.3.188",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"telagent-telemetry-agent-telemetruum-kube-agent": {
+							"name": "telagent-telemetry-agent-telemetruum-kube-agent",
+							"cpuUsage": 0.002774929
+						}
+					}
+				}
+			}
+		},
+		"icos-cluster-2c": {
+			"type": "ocm",
+			"uuid": "e323e404-9663-4f86-9ba4-4d58d815ef50",
+			"name": "icos-cluster-2c",
+			"serviceLevelAgreement": {},
+			"API": {},
+			"node": {
+				"raspberryPik3s-103": {
+					"type": "ocm",
+					"uuid": "1b48ae5baed44bc995232b48c8f5e77f",
+					"name": "raspberryPik3s-103",
+					"location": {},
+					"vulnerabilities": {
+						"Critical": 6,
+						"High": 108,
+						"Low": 11,
+						"Medium": 112
+					},
+					"ScaScore": 44,
+					"staticMetrics": {
+						"cpuArchitecture": "aarch64",
+						"cpuCores": 4,
+						"cpuMaxFrequency": 1500000000,
+						"RAMMemory": 3921018880
+					},
+					"dynamicMetrics": {
+						"cpuTemperature": 35.537,
+						"freeRAM": 146362368,
+						"availableStorage": {}
+					},
+					"devices": {
+						"usb-storage_174c_1156": {
+							"name": "usb-storage_174c_1156",
+							"type": "usb-storage",
+							"status": "available",
+							"path": "none"
+						}
+					}
+				}
+			},
+			"network": {},
+			"pod": {
+				"cilium-2tqlm": {
+					"name": "cilium-2tqlm",
+					"ip": "10.150.0.103",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"cilium-agent": {
+							"name": "cilium-agent",
+							"cpuUsage": 0.030051354
+						}
+					}
+				},
+				"cilium-operator-f5dcdcc8d-xfnmv": {
+					"name": "cilium-operator-f5dcdcc8d-xfnmv",
+					"ip": "10.150.0.103",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"cilium-operator": {
+							"name": "cilium-operator",
+							"cpuUsage": 0.002640508
+						}
+					}
+				},
+				"coredns-6799fbcd5-wn695": {
+					"name": "coredns-6799fbcd5-wn695",
+					"ip": "10.0.0.248",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"coredns": {
+							"name": "coredns",
+							"cpuUsage": 0.006629102
+						}
+					}
+				},
+				"generic-device-plugin-pgz2t": {
+					"name": "generic-device-plugin-pgz2t",
+					"ip": "10.0.0.232",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"generic-device-plugin": {
+							"name": "generic-device-plugin",
+							"cpuUsage": 0.012497383
+						}
+					}
+				},
+				"helm-controller-794c4dfdc5-zq9fc": {
+					"name": "helm-controller-794c4dfdc5-zq9fc",
+					"ip": "10.0.0.50",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"manager": {
+							"name": "manager",
+							"cpuUsage": 0.001874679
+						}
+					}
+				},
+				"hubble-relay-6464bcf9db-srkf6": {
+					"name": "hubble-relay-6464bcf9db-srkf6",
+					"ip": "10.0.0.120",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"hubble-relay": {
+							"name": "hubble-relay",
+							"cpuUsage": 0.000211068
+						}
+					}
+				},
+				"hubble-ui-6f48889749-47ghx": {
+					"name": "hubble-ui-6f48889749-47ghx",
+					"ip": "10.0.0.6",
+					"status": "Running",
+					"numberOfContainers": 2,
+					"container": {
+						"backend": {
+							"name": "backend",
+							"cpuUsage": 0.000002196
+						},
+						"frontend": {
+							"name": "frontend"
+						}
+					}
+				},
+				"image-automation-controller-96c66dff7-dkn4q": {
+					"name": "image-automation-controller-96c66dff7-dkn4q",
+					"ip": "10.0.0.73",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"manager": {
+							"name": "manager",
+							"cpuUsage": 0.001826692
+						}
+					}
+				},
+				"image-reflector-controller-57d6d87c4f-6v4pw": {
+					"name": "image-reflector-controller-57d6d87c4f-6v4pw",
+					"ip": "10.0.0.115",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"manager": {
+							"name": "manager",
+							"cpuUsage": 0.015387061
+						}
+					}
+				},
+				"klusterlet-8699d7b489-ldfts": {
+					"name": "klusterlet-8699d7b489-ldfts",
+					"ip": "10.0.0.188",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"klusterlet": {
+							"name": "klusterlet",
+							"cpuUsage": 0.006409493
+						}
+					}
+				},
+				"klusterlet-registration-agent-5f4f56bc47-8hnkt": {
+					"name": "klusterlet-registration-agent-5f4f56bc47-8hnkt",
+					"ip": "10.0.0.230",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"registration-controller": {
+							"name": "registration-controller",
+							"cpuUsage": 0.006871154
+						}
+					}
+				},
+				"klusterlet-work-agent-57f9bd895d-dtx2l": {
+					"name": "klusterlet-work-agent-57f9bd895d-dtx2l",
+					"ip": "10.0.0.237",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"klusterlet-manifestwork-agent": {
+							"name": "klusterlet-manifestwork-agent",
+							"cpuUsage": 0.005374821
+						}
+					}
+				},
+				"kustomize-controller-68dc6d6bcd-kjqq7": {
+					"name": "kustomize-controller-68dc6d6bcd-kjqq7",
+					"ip": "10.0.0.172",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"manager": {
+							"name": "manager",
+							"cpuUsage": 0.001854405
+						}
+					}
+				},
+				"local-path-provisioner-6c86858495-wtc95": {
+					"name": "local-path-provisioner-6c86858495-wtc95",
+					"ip": "10.0.0.107",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"local-path-provisioner": {
+							"name": "local-path-provisioner",
+							"cpuUsage": 0.000170747
+						}
+					}
+				},
+				"metrics-server-67c658944b-qljzg": {
+					"name": "metrics-server-67c658944b-qljzg",
+					"ip": "10.0.0.162",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"metrics-server": {
+							"name": "metrics-server",
+							"cpuUsage": 0.014608621
+						}
+					}
+				},
+				"nfd-master-65c55894f7-ng58t": {
+					"name": "nfd-master-65c55894f7-ng58t",
+					"ip": "10.0.0.204",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"nfd-master": {
+							"name": "nfd-master",
+							"cpuUsage": 0.00034183
+						}
+					}
+				},
+				"nfd-prom-exporter-85f66bb788-zf792": {
+					"name": "nfd-prom-exporter-85f66bb788-zf792",
+					"ip": "10.0.0.222",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"exporter-container": {
+							"name": "exporter-container",
+							"cpuUsage": 0.013100425
+						}
+					}
+				},
+				"nfd-worker-8vrhv": {
+					"name": "nfd-worker-8vrhv",
+					"ip": "10.0.0.24",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"nfd-worker": {
+							"name": "nfd-worker",
+							"cpuUsage": 0.000033768
+						}
+					}
+				},
+				"notification-controller-5bb6647999-rfstr": {
+					"name": "notification-controller-5bb6647999-rfstr",
+					"ip": "10.0.0.242",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"manager": {
+							"name": "manager",
+							"cpuUsage": 0.002084917
+						}
+					}
+				},
+				"source-controller-d44985458-szpbf": {
+					"name": "source-controller-d44985458-szpbf",
+					"ip": "10.0.0.136",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"manager": {
+							"name": "manager",
+							"cpuUsage": 0.006283257
+						}
+					}
+				},
+				"telagent-kube-state-metrics-7b4b6ddc97-cnll6": {
+					"name": "telagent-kube-state-metrics-7b4b6ddc97-cnll6",
+					"ip": "10.0.0.112",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"kube-state-metrics": {
+							"name": "kube-state-metrics",
+							"cpuUsage": 0.00171437
+						}
+					}
+				},
+				"telagent-prometheus-node-exporter-4pfwn": {
+					"name": "telagent-prometheus-node-exporter-4pfwn",
+					"ip": "10.150.0.103",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"node-exporter": {
+							"name": "node-exporter",
+							"cpuUsage": 0.000228745
+						}
+					}
+				},
+				"telagent-telemetry-agent-otel-node-agent-nmr64": {
+					"name": "telagent-telemetry-agent-otel-node-agent-nmr64",
+					"ip": "10.0.0.100",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"otel-collector": {
+							"name": "otel-collector",
+							"cpuUsage": 0.001818731
+						}
+					}
+				},
+				"telagent-telemetry-agent-otel-target-allocator-85cfcfbd4b-jbh4q": {
+					"name": "telagent-telemetry-agent-otel-target-allocator-85cfcfbd4b-jbh4q",
+					"ip": "10.0.0.182",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"telagent-telemetry-agent-otel-target-allocator": {
+							"name": "telagent-telemetry-agent-otel-target-allocator",
+							"cpuUsage": 0.000908886
+						}
+					}
+				},
+				"telagent-telemetry-agent-telemetruum-kube-agent-8clbg": {
+					"name": "telagent-telemetry-agent-telemetruum-kube-agent-8clbg",
+					"ip": "10.150.0.103",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"telagent-telemetry-agent-telemetruum-kube-agent": {
+							"name": "telagent-telemetry-agent-telemetruum-kube-agent",
+							"cpuUsage": 0.003904215
+						}
+					}
+				}
+			}
+		},
+		"icos-cluster-b": {
+			"type": "ocm",
+			"uuid": "93111014-6276-4c1f-83eb-a5f7aa8386c9",
+			"name": "icos-cluster-b",
+			"serviceLevelAgreement": {},
+			"API": {},
+			"node": {
+				"icosedge": {
+					"type": "ocm",
+					"uuid": "57e17cac94714bf6976f1e071d64d586",
+					"name": "icosedge",
+					"location": {},
+					"vulnerabilities": {
+						"Critical": 6,
+						"High": 191,
+						"Low": 5,
+						"Medium": 79,
+						"Untriaged": 64
+					},
+					"ScaScore": 42,
+					"staticMetrics": {
+						"cpuArchitecture": "x86_64",
+						"cpuCores": 4,
+						"cpuMaxFrequency": 3700000000,
+						"RAMMemory": 16686080000
+					},
+					"dynamicMetrics": {
+						"cpuTemperature": 41,
+						"cpuEnergyConsumption": 53179.423305,
+						"freeRAM": 7756066816,
+						"availableStorage": {}
+					},
+					"devices": {
+						"usb-human-interface_0d3d_0040": {
+							"name": "usb-human-interface_0d3d_0040",
+							"type": "usb-human-interface",
+							"status": "available",
+							"path": "none"
+						},
+						"usb-storage_05e3_0723": {
+							"name": "usb-storage_05e3_0723",
+							"type": "usb-storage",
+							"status": "available",
+							"path": "none"
+						},
+						"usb-video_046d_0825": {
+							"name": "usb-video_046d_0825",
+							"type": "usb-video",
+							"status": "available",
+							"path": "squat.ai/video"
+						}
+					}
+				}
+			},
+			"network": {},
+			"pod": {
+				"cilium-8j4cp": {
+					"name": "cilium-8j4cp",
+					"ip": "10.150.0.144",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"cilium-agent": {
+							"name": "cilium-agent",
+							"cpuUsage": 0.017450197
+						}
+					}
+				},
+				"cilium-operator-6d77c7bddb-7fgfg": {
+					"name": "cilium-operator-6d77c7bddb-7fgfg",
+					"ip": "10.150.0.144",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"cilium-operator": {
+							"name": "cilium-operator",
+							"cpuUsage": 0.001566183
+						}
+					}
+				},
+				"coredns-77ccd57875-lpbxw": {
+					"name": "coredns-77ccd57875-lpbxw",
+					"ip": "10.0.1.194",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"coredns": {
+							"name": "coredns",
+							"cpuUsage": 0.002406438
+						}
+					}
+				},
+				"flask-app-deployment-c57f6cd64-jgg6z": {
+					"name": "flask-app-deployment-c57f6cd64-jgg6z",
+					"ip": "10.0.1.184",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"flask-app": {
+							"name": "flask-app",
+							"cpuUsage": 0.000140469
+						}
+					}
+				},
+				"generic-device-plugin-976d8": {
+					"name": "generic-device-plugin-976d8",
+					"ip": "10.0.1.251",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"generic-device-plugin": {
+							"name": "generic-device-plugin",
+							"cpuUsage": 0.0003192
+						}
+					}
+				},
+				"generic-device-plugin-tvxwb": {
+					"name": "generic-device-plugin-tvxwb",
+					"ip": "10.0.1.67",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"generic-device-plugin": {
+							"name": "generic-device-plugin",
+							"cpuUsage": 0.001398813
+						}
+					}
+				},
+				"helm-controller-8447fd7485-sxqnx": {
+					"name": "helm-controller-8447fd7485-sxqnx",
+					"ip": "10.0.1.226",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"manager": {
+							"name": "manager",
+							"cpuUsage": 0.001619203
+						}
+					}
+				},
+				"hubble-relay-84cf96bbf6-krtb5": {
+					"name": "hubble-relay-84cf96bbf6-krtb5",
+					"ip": "10.0.1.219",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"hubble-relay": {
+							"name": "hubble-relay",
+							"cpuUsage": 0.000092519
+						}
+					}
+				},
+				"hubble-ui-5dfbdddc49-74bjg": {
+					"name": "hubble-ui-5dfbdddc49-74bjg",
+					"ip": "10.0.1.93",
+					"status": "Running",
+					"numberOfContainers": 2,
+					"container": {
+						"backend": {
+							"name": "backend",
+							"cpuUsage": 0.000360995
+						},
+						"frontend": {
+							"name": "frontend"
+						}
+					}
+				},
+				"image-automation-controller-7748b8b56c-z7m7x": {
+					"name": "image-automation-controller-7748b8b56c-z7m7x",
+					"ip": "10.0.1.135",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"manager": {
+							"name": "manager",
+							"cpuUsage": 0.001039848
+						}
+					}
+				},
+				"image-reflector-controller-876969b7f-6656s": {
+					"name": "image-reflector-controller-876969b7f-6656s",
+					"ip": "10.0.1.117",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"manager": {
+							"name": "manager",
+							"cpuUsage": 0.015764318
+						}
+					}
+				},
+				"klusterlet-f868d4549-5vhcc": {
+					"name": "klusterlet-f868d4549-5vhcc",
+					"ip": "10.0.1.19",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"klusterlet": {
+							"name": "klusterlet",
+							"cpuUsage": 0.004819498
+						}
+					}
+				},
+				"klusterlet-registration-agent-64bd494fc5-m5dsj": {
+					"name": "klusterlet-registration-agent-64bd494fc5-m5dsj",
+					"ip": "10.0.1.192",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"registration-controller": {
+							"name": "registration-controller",
+							"cpuUsage": 0.004970695
+						}
+					}
+				},
+				"klusterlet-work-agent-847df687d4-kvwd8": {
+					"name": "klusterlet-work-agent-847df687d4-kvwd8",
+					"ip": "10.0.1.252",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"klusterlet-manifestwork-agent": {
+							"name": "klusterlet-manifestwork-agent",
+							"cpuUsage": 0.003726994
+						}
+					}
+				},
+				"kustomize-controller-77fb678b68-lz8hf": {
+					"name": "kustomize-controller-77fb678b68-lz8hf",
+					"ip": "10.0.1.162",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"manager": {
+							"name": "manager",
+							"cpuUsage": 0.00118736
+						}
+					}
+				},
+				"local-path-provisioner-957fdf8bc-8qhlg": {
+					"name": "local-path-provisioner-957fdf8bc-8qhlg",
+					"ip": "10.0.1.239",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"local-path-provisioner": {
+							"name": "local-path-provisioner",
+							"cpuUsage": 0.000462191
+						}
+					}
+				},
+				"metrics-server-648b5df564-w8zhc": {
+					"name": "metrics-server-648b5df564-w8zhc",
+					"ip": "10.0.1.98",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"metrics-server": {
+							"name": "metrics-server",
+							"cpuUsage": 0.007539088
+						}
+					}
+				},
+				"nfd-master-554f8dff79-95m9p": {
+					"name": "nfd-master-554f8dff79-95m9p",
+					"ip": "10.0.1.253",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"nfd-master": {
+							"name": "nfd-master",
+							"cpuUsage": 0.000189176
+						}
+					}
+				},
+				"nfd-prom-exporter-c8cfb9b74-mgsh7": {
+					"name": "nfd-prom-exporter-c8cfb9b74-mgsh7",
+					"ip": "10.0.1.21",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"exporter-container": {
+							"name": "exporter-container",
+							"cpuUsage": 0.006623675
+						}
+					}
+				},
+				"nfd-worker-2jxpn": {
+					"name": "nfd-worker-2jxpn",
+					"ip": "10.0.1.102",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"nfd-worker": {
+							"name": "nfd-worker",
+							"cpuUsage": 0.005584595
+						}
+					}
+				},
+				"notification-controller-6cb7b4f4bf-grwxb": {
+					"name": "notification-controller-6cb7b4f4bf-grwxb",
+					"ip": "10.0.1.131",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"manager": {
+							"name": "manager",
+							"cpuUsage": 0.001459053
+						}
+					}
+				},
+				"scaphandre-mc4px": {
+					"name": "scaphandre-mc4px",
+					"ip": "10.0.1.48",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"scaphandre": {
+							"name": "scaphandre",
+							"cpuUsage": 0.023556175
+						}
+					}
+				},
+				"source-controller-7456cdd57b-94zc2": {
+					"name": "source-controller-7456cdd57b-94zc2",
+					"ip": "10.0.1.142",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"manager": {
+							"name": "manager",
+							"cpuUsage": 0.001229159
+						}
+					}
+				},
+				"telagent-kube-state-metrics-657d694787-w7ljq": {
+					"name": "telagent-kube-state-metrics-657d694787-w7ljq",
+					"ip": "10.0.1.181",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"kube-state-metrics": {
+							"name": "kube-state-metrics",
+							"cpuUsage": 0.000711525
+						}
+					}
+				},
+				"telagent-prometheus-node-exporter-5rgk7": {
+					"name": "telagent-prometheus-node-exporter-5rgk7",
+					"ip": "10.150.0.144",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"node-exporter": {
+							"name": "node-exporter",
+							"cpuUsage": 0.004018815
+						}
+					}
+				},
+				"telagent-telemetry-agent-otel-node-agent-fxq7d": {
+					"name": "telagent-telemetry-agent-otel-node-agent-fxq7d",
+					"ip": "10.0.1.127",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"otel-collector": {
+							"name": "otel-collector",
+							"cpuUsage": 0.008725305
+						}
+					}
+				},
+				"telagent-telemetry-agent-otel-target-allocator-54d4d47c7b-dvvsv": {
+					"name": "telagent-telemetry-agent-otel-target-allocator-54d4d47c7b-dvvsv",
+					"ip": "10.0.1.200",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"telagent-telemetry-agent-otel-target-allocator": {
+							"name": "telagent-telemetry-agent-otel-target-allocator",
+							"cpuUsage": 0.000533229
+						}
+					}
+				},
+				"telagent-telemetry-agent-telemetruum-kube-agent-dbscb": {
+					"name": "telagent-telemetry-agent-telemetruum-kube-agent-dbscb",
+					"ip": "10.150.0.144",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"telagent-telemetry-agent-telemetruum-kube-agent": {
+							"name": "telagent-telemetry-agent-telemetruum-kube-agent",
+							"cpuUsage": 0.002490338
+						}
+					}
+				}
+			}
+		},
+		"icos-cluster-c": {
+			"type": "ocm",
+			"uuid": "d8b8c113-ec0d-473c-a322-8bb5df19a594",
+			"name": "icos-cluster-c",
+			"serviceLevelAgreement": {},
+			"API": {},
+			"node": {
+				"raspberryPik3s-133": {
+					"type": "ocm",
+					"uuid": "a0efe60057aa4379ba741b5bfe244a7c",
+					"name": "raspberryPik3s-133",
+					"location": {},
+					"vulnerabilities": {
+						"Critical": 5,
+						"High": 19,
+						"Low": 11,
+						"Medium": 32
+					},
+					"ScaScore": 50,
+					"staticMetrics": {
+						"cpuArchitecture": "aarch64",
+						"cpuCores": 4,
+						"cpuMaxFrequency": 1500000000,
+						"RAMMemory": 3975442432
+					},
+					"dynamicMetrics": {
+						"cpuTemperature": 40.894,
+						"freeRAM": 163774464,
+						"availableStorage": {}
+					},
+					"devices": {
+						"usb-storage_174c_1156": {
+							"name": "usb-storage_174c_1156",
+							"type": "usb-storage",
+							"status": "available",
+							"path": "none"
+						}
+					}
+				}
+			},
+			"network": {},
+			"pod": {
+				"cilium-6vghh": {
+					"name": "cilium-6vghh",
+					"ip": "10.150.0.133",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"cilium-agent": {
+							"name": "cilium-agent",
+							"cpuUsage": 0.04068895
+						}
+					}
+				},
+				"cilium-operator-dd95cc587-cb8qb": {
+					"name": "cilium-operator-dd95cc587-cb8qb",
+					"ip": "10.150.0.133",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"cilium-operator": {
+							"name": "cilium-operator",
+							"cpuUsage": 0.004278528
+						}
+					}
+				},
+				"coredns-6799fbcd5-pbxqq": {
+					"name": "coredns-6799fbcd5-pbxqq",
+					"ip": "10.0.0.161",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"coredns": {
+							"name": "coredns",
+							"cpuUsage": 0.006013144
+						}
+					}
+				},
+				"generic-device-plugin-kqk8w": {
+					"name": "generic-device-plugin-kqk8w",
+					"ip": "10.0.0.118",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"generic-device-plugin": {
+							"name": "generic-device-plugin",
+							"cpuUsage": 0.009790476
+						}
+					}
+				},
+				"helm-controller-794c4dfdc5-t5lc5": {
+					"name": "helm-controller-794c4dfdc5-t5lc5",
+					"ip": "10.0.0.209",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"manager": {
+							"name": "manager",
+							"cpuUsage": 0.002103825
+						}
+					}
+				},
+				"hubble-relay-69f5fc5b79-kkx5f": {
+					"name": "hubble-relay-69f5fc5b79-kkx5f",
+					"ip": "10.0.0.109",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"hubble-relay": {
+							"name": "hubble-relay",
+							"cpuUsage": 0.000745054
+						}
+					}
+				},
+				"hubble-ui-6548d56557-zvhr7": {
+					"name": "hubble-ui-6548d56557-zvhr7",
+					"ip": "10.0.0.204",
+					"status": "Running",
+					"numberOfContainers": 2,
+					"container": {
+						"backend": {
+							"name": "backend"
+						},
+						"frontend": {
+							"name": "frontend",
+							"cpuUsage": 0.000133787
+						}
+					}
+				},
+				"image-automation-controller-96c66dff7-m4fpn": {
+					"name": "image-automation-controller-96c66dff7-m4fpn",
+					"ip": "10.0.0.68",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"manager": {
+							"name": "manager",
+							"cpuUsage": 0.001643307
+						}
+					}
+				},
+				"image-reflector-controller-57d6d87c4f-tphvg": {
+					"name": "image-reflector-controller-57d6d87c4f-tphvg",
+					"ip": "10.0.0.100",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"manager": {
+							"name": "manager",
+							"cpuUsage": 0.016299529
+						}
+					}
+				},
+				"klusterlet-8699d7b489-jcf7x": {
+					"name": "klusterlet-8699d7b489-jcf7x",
+					"ip": "10.0.0.230",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"klusterlet": {
+							"name": "klusterlet",
+							"cpuUsage": 0.006310019
+						}
+					}
+				},
+				"klusterlet-registration-agent-58c699d7d5-95sc5": {
+					"name": "klusterlet-registration-agent-58c699d7d5-95sc5",
+					"ip": "10.0.0.237",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"registration-controller": {
+							"name": "registration-controller",
+							"cpuUsage": 0.00674277
+						}
+					}
+				},
+				"klusterlet-work-agent-684f7f4bf4-gggs9": {
+					"name": "klusterlet-work-agent-684f7f4bf4-gggs9",
+					"ip": "10.0.0.69",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"klusterlet-manifestwork-agent": {
+							"name": "klusterlet-manifestwork-agent",
+							"cpuUsage": 0.005453486
+						}
+					}
+				},
+				"kustomize-controller-68dc6d6bcd-k5sjh": {
+					"name": "kustomize-controller-68dc6d6bcd-k5sjh",
+					"ip": "10.0.0.129",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"manager": {
+							"name": "manager",
+							"cpuUsage": 0.013354682
+						}
+					}
+				},
+				"local-path-provisioner-6c86858495-cwwt8": {
+					"name": "local-path-provisioner-6c86858495-cwwt8",
+					"ip": "10.0.0.201",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"local-path-provisioner": {
+							"name": "local-path-provisioner",
+							"cpuUsage": 0.000149413
+						}
+					}
+				},
+				"metrics-server-67c658944b-7vzdl": {
+					"name": "metrics-server-67c658944b-7vzdl",
+					"ip": "10.0.0.38",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"metrics-server": {
+							"name": "metrics-server",
+							"cpuUsage": 0.013244111
+						}
+					}
+				},
+				"nfd-master-65c55894f7-tqtfq": {
+					"name": "nfd-master-65c55894f7-tqtfq",
+					"ip": "10.0.0.180",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"nfd-master": {
+							"name": "nfd-master",
+							"cpuUsage": 0.000543875
+						}
+					}
+				},
+				"nfd-prom-exporter-85f66bb788-vgkft": {
+					"name": "nfd-prom-exporter-85f66bb788-vgkft",
+					"ip": "10.0.0.174",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"exporter-container": {
+							"name": "exporter-container",
+							"cpuUsage": 0.018382276
+						}
+					}
+				},
+				"nfd-worker-js8r8": {
+					"name": "nfd-worker-js8r8",
+					"ip": "10.0.0.12",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"nfd-worker": {
+							"name": "nfd-worker"
+						}
+					}
+				},
+				"notification-controller-5bb6647999-bcjww": {
+					"name": "notification-controller-5bb6647999-bcjww",
+					"ip": "10.0.0.80",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"manager": {
+							"name": "manager",
+							"cpuUsage": 0.0021446
+						}
+					}
+				},
+				"source-controller-d44985458-jdh49": {
+					"name": "source-controller-d44985458-jdh49",
+					"ip": "10.0.0.48",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"manager": {
+							"name": "manager",
+							"cpuUsage": 0.002444654
+						}
+					}
+				},
+				"telagent-kube-state-metrics-7b4b6ddc97-dgmm7": {
+					"name": "telagent-kube-state-metrics-7b4b6ddc97-dgmm7",
+					"ip": "10.0.0.103",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"kube-state-metrics": {
+							"name": "kube-state-metrics",
+							"cpuUsage": 0.002256502
+						}
+					}
+				},
+				"telagent-prometheus-node-exporter-lc9l9": {
+					"name": "telagent-prometheus-node-exporter-lc9l9",
+					"ip": "10.150.0.133",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"node-exporter": {
+							"name": "node-exporter",
+							"cpuUsage": 0.000175818
+						}
+					}
+				},
+				"telagent-telemetry-agent-otel-node-agent-th8tt": {
+					"name": "telagent-telemetry-agent-otel-node-agent-th8tt",
+					"ip": "10.0.0.210",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"otel-collector": {
+							"name": "otel-collector",
+							"cpuUsage": 0.005809247
+						}
+					}
+				},
+				"telagent-telemetry-agent-otel-target-allocator-85cfcfbd4b-7vs8p": {
+					"name": "telagent-telemetry-agent-otel-target-allocator-85cfcfbd4b-7vs8p",
+					"ip": "10.0.0.44",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"telagent-telemetry-agent-otel-target-allocator": {
+							"name": "telagent-telemetry-agent-otel-target-allocator",
+							"cpuUsage": 0.000850877
+						}
+					}
+				},
+				"telagent-telemetry-agent-telemetruum-kube-agent-pmh7t": {
+					"name": "telagent-telemetry-agent-telemetruum-kube-agent-pmh7t",
+					"ip": "10.150.0.133",
+					"status": "Running",
+					"numberOfContainers": 1,
+					"container": {
+						"telagent-telemetry-agent-telemetruum-kube-agent": {
+							"name": "telagent-telemetry-agent-telemetruum-kube-agent",
+							"cpuUsage": 0.005307564
+						}
+					}
+				}
+			}
+		},
+		"nuvla": {
+			"type": "nuvla",
+			"uuid": "nuvla",
+			"serviceLevelAgreement": {},
+			"API": {},
+			"node": {
+				"john-rasbpi-5-1": {
+					"type": "nuvla",
+					"uuid": "9fe7ffa655a340b4be55f1febbd42c69",
+					"name": "john-rasbpi-5-1",
+					"location": {},
+					"staticMetrics": {
+						"cpuArchitecture": "aarch64"
+					},
+					"dynamicMetrics": {
+						"freeRAM": 1557200896,
+						"availableStorage": {}
+					},
+					"devices": {
+						"usb-video_1b3f_2247": {
+							"name": "usb-video_1b3f_2247",
+							"type": "usb-video",
+							"status": "busy",
+							"path": "squat.ai/video"
+						}
+					}
+				},
+				"nuvla-edge-icos-1": {
+					"type": "nuvla",
+					"uuid": "757213681b524a7d843998f2ccde9c3d",
+					"name": "nuvla-edge-icos-1",
+					"location": {},
+					"staticMetrics": {
+						"cpuArchitecture": "x86_64"
+					},
+					"dynamicMetrics": {
+						"freeRAM": 260206592,
+						"availableStorage": {}
+					},
+					"devices": {
+						"usb-human-interface_0627_0001": {
+							"name": "usb-human-interface_0627_0001",
+							"type": "usb-human-interface",
+							"status": "available",
+							"path": "none"
+						}
+					}
+				},
+				"nuvlaedge-docker-01": {
+					"type": "nuvla",
+					"uuid": "258974c6ac9c4b1a8dcbfbbe33af1e4e",
+					"name": "nuvlaedge-docker-01",
+					"location": {},
+					"staticMetrics": {
+						"cpuArchitecture": "x86_64"
+					},
+					"dynamicMetrics": {
+						"freeRAM": 300515328,
+						"availableStorage": {}
+					},
+					"devices": {
+						"1.1-root-hub_1d6b_0001": {
+							"name": "1.1-root-hub_1d6b_0001",
+							"type": "1.1-root-hub",
+							"status": "available"
+						},
+						"unnamed-usb-device-with-id-0627:0001_0627_0001": {
+							"name": "unnamed-usb-device-with-id-0627:0001_0627_0001",
+							"type": "unnamed-usb-device-with-id-0627:0001",
+							"status": "available"
+						}
+					}
+				}
+			},
+			"network": {},
+			"pod": {
+				"agent-84cf984b97-llch4": {
+					"name": "agent-84cf984b97-llch4",
+					"ip": "10.42.0.12"
+				},
+				"busybox-5ff5f769f4-vld5v": {
+					"name": "busybox-5ff5f769f4-vld5v",
+					"ip": "10.42.0.231"
+				},
+				"coredns-6799fbcd5-6b8jk": {
+					"name": "coredns-6799fbcd5-6b8jk",
+					"ip": "10.42.0.6"
+				},
+				"data-gateway-7977474d5d-pvsvv": {
+					"name": "data-gateway-7977474d5d-pvsvv",
+					"ip": "10.42.0.11"
+				},
+				"dnsutils": {
+					"name": "dnsutils",
+					"ip": "10.42.0.146"
+				},
+				"generic-device-plugin-w726b": {
+					"name": "generic-device-plugin-w726b",
+					"ip": "10.42.0.14"
+				},
+				"helm-install-traefik-crd-hj2qt": {
+					"name": "helm-install-traefik-crd-hj2qt",
+					"ip": "10.42.0.4"
+				},
+				"helm-install-traefik-h2nmb": {
+					"name": "helm-install-traefik-h2nmb",
+					"ip": "10.42.0.2"
+				},
+				"job-27c220d7-22ef-407a-a2ae-86957fc877c7-jq6df": {
+					"name": "job-27c220d7-22ef-407a-a2ae-86957fc877c7-jq6df",
+					"ip": "10.42.0.90"
+				},
+				"job-5094ac31-8843-4f55-952b-b861176d660f-5xnxj": {
+					"name": "job-5094ac31-8843-4f55-952b-b861176d660f-5xnxj",
+					"ip": "10.42.0.89"
+				},
+				"local-path-provisioner-6c86858495-jpth2": {
+					"name": "local-path-provisioner-6c86858495-jpth2",
+					"ip": "10.42.0.5"
+				},
+				"metrics-server-67c658944b-cxf52": {
+					"name": "metrics-server-67c658944b-cxf52",
+					"ip": "10.42.0.3"
+				},
+				"mjpeg-pod": {
+					"name": "mjpeg-pod",
+					"ip": "10.42.0.245"
+				},
+				"mqtt-deployment-fdf67654b-q2j5c": {
+					"name": "mqtt-deployment-fdf67654b-q2j5c",
+					"ip": "10.42.0.77"
+				},
+				"my-nginx-684dd4dcd4-xtpjm": {
+					"name": "my-nginx-684dd4dcd4-xtpjm",
+					"ip": "10.42.0.230"
+				},
+				"nfd-master-65c55894f7-hnk4t": {
+					"name": "nfd-master-65c55894f7-hnk4t",
+					"ip": "10.42.0.13"
+				},
+				"nfd-prom-exporter-85f66bb788-wzk4x": {
+					"name": "nfd-prom-exporter-85f66bb788-wzk4x",
+					"ip": "10.42.0.15"
+				},
+				"nfd-worker-wj2zn": {
+					"name": "nfd-worker-wj2zn",
+					"ip": "10.42.0.18"
+				},
+				"object-detector-66ff8f989f-4rpjv": {
+					"name": "object-detector-66ff8f989f-4rpjv",
+					"ip": "10.42.0.80"
+				},
+				"ovpn": {
+					"name": "ovpn",
+					"ip": "192.168.40.43"
+				},
+				"svclb-mqtt-service-8fdb3d9f-9flqz": {
+					"name": "svclb-mqtt-service-8fdb3d9f-9flqz",
+					"ip": "10.42.0.57"
+				},
+				"svclb-object-detector-service-e9f2b26d-7wgbl": {
+					"name": "svclb-object-detector-service-e9f2b26d-7wgbl",
+					"ip": "10.42.0.81"
+				},
+				"svclb-traefik-35466d57-nmnjh": {
+					"name": "svclb-traefik-35466d57-nmnjh",
+					"ip": "10.42.0.7"
+				},
+				"system-manager-6875b98bbf-pwxld": {
+					"name": "system-manager-6875b98bbf-pwxld",
+					"ip": "10.42.0.10"
+				},
+				"telemetry-agent-kube-state-metrics-76f8c9bc6-v6gqt": {
+					"name": "telemetry-agent-kube-state-metrics-76f8c9bc6-v6gqt",
+					"ip": "10.42.0.16"
+				},
+				"telemetry-agent-prometheus-node-exporter-ff8lv": {
+					"name": "telemetry-agent-prometheus-node-exporter-ff8lv",
+					"ip": "192.168.40.43"
+				},
+				"telemetry-agent-telemetry-agent-otel-node-agent-ghnxd": {
+					"name": "telemetry-agent-telemetry-agent-otel-node-agent-ghnxd",
+					"ip": "10.42.0.17"
+				},
+				"telemetry-agent-telemetry-agent-otel-target-allocator-6c87vxzz5": {
+					"name": "telemetry-agent-telemetry-agent-otel-target-allocator-6c87vxzz5",
+					"ip": "10.42.0.19"
+				},
+				"telemetry-agent-telemetry-agent-telemetruum-kube-agent-48v4p": {
+					"name": "telemetry-agent-telemetry-agent-telemetruum-kube-agent-48v4p",
+					"ip": "192.168.40.43"
+				},
+				"traefik-f4564c4f4-vkt6g": {
+					"name": "traefik-f4564c4f4-vkt6g",
+					"ip": "10.42.0.8"
+				},
+				"vpn-client-5c867b5996-d6dgn": {
+					"name": "vpn-client-5c867b5996-d6dgn",
+					"ip": "192.168.40.43"
+				}
+			}
+		}
+	}
+}

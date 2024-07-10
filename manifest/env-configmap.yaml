@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: matchmaker-configmap
+data:
+  CLIENT_ID: icos-dev-matchmaker
+  CLIENT_SECRET: 5Ag0gNVrZGKXiUGZMdW2GUX3MOsnyPUk
+  URL_INTROESPECT: https://keycloak.dev.icos.91.109.56.214.sslip.io/realms/icos-dev/protocol/openid-connect/token/introspect
+  URL_TOKEN: https://keycloak.dev.icos.91.109.56.214.sslip.io/realms/icos-dev/protocol/openid-connect/token
+  URL_AGGREGATOR: http://localhost:8000/agregator
+  USERNAME: judit.cerda@upc.edu
+  PASSWORD: 6byf$chq*N%3zEkAbY

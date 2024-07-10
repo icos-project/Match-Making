@@ -1,0 +1,16 @@
+global: {}
+
+image:
+  repository: harbor.res.eng.it/icos/meta-kernel/match-making
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 8000
+
+matchmaker:
+  clientID: client-id
+  clientSecret: secret
+  urlIntrospect: https://keycloak-introspect-url/introspect
+  urlToken: https://keycloak-token-url/token
+  urlAggregator: http://aggregator-url/agregator

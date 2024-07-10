@@ -1,0 +1,70 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: matchmaker-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: matchmaker
+  template:
+    metadata:
+      labels:
+        app: matchmaker
+    spec:
+      containers:
+      - name: matchmaker
+        image: harbor.res.eng.it/icos-private/meta-kernel/match-making/master:latest
+        ports:
+        - containerPort: 8000
+        env:
+        - name: CLIENT_ID
+          valueFrom:
+            configMapKeyRef:
+              name: matchmaker-configmap
+              key: CLIENT_ID
+        - name: CLIENT_SECRET
+          valueFrom:
+            configMapKeyRef:
+              name: matchmaker-configmap
+              key: CLIENT_SECRET
+        - name: URL_INTROESPECT
+          valueFrom:
+            configMapKeyRef:
+              name: matchmaker-configmap
+              key: URL_INTROESPECT
+        - name: URL_TOKEN
+          valueFrom:
+            configMapKeyRef:
+              name: matchmaker-configmap
+              key: URL_TOKEN
+        - name: URL_AGGREGATOR
+          valueFrom:
+            configMapKeyRef:
+              name: matchmaker-configmap
+              key: URL_AGGREGATOR
+        - name: USERNAME
+          valueFrom:
+            configMapKeyRef:
+              name: matchmaker-configmap
+              key: USERNAME
+        - name: PASSWORD
+          valueFrom:
+            configMapKeyRef:
+              name: matchmaker-configmap
+              key: PASSWORD
+      imagePullSecrets:
+      - name: harbor-cred
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: matchmaker-service
+spec:
+  selector:
+    app: matchmaker
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000
+  type: LoadBalancer

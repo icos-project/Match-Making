@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-matchmaker-config
+data:
+  CLIENT_ID: {{ tpl .Values.matchmaker.clientID . }}
+  CLIENT_SECRET: {{ tpl .Values.matchmaker.clientSecret . }}
+  URL_INTROESPECT: {{ tpl .Values.matchmaker.urlIntrospect . }}
+  URL_TOKEN: {{ tpl .Values.matchmaker.urlToken . }}
+  URL_AGGREGATOR: {{ tpl .Values.matchmaker.urlAggregator . }}
+

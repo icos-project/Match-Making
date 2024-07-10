@@ -1,0 +1,7 @@
+{
+    "client_id": "admin-cli",
+    "client_secret": "NIEzAv3WvzNaHTBOntZOKPz6kugvsF6M",
+    "grant_type": "password",
+    "username": "admin",
+    "password": "change_me"
+}

@@ -1,0 +1,5 @@
+When I run the MM localy on my machine with my keycloak server, the server runs as a container so I need to get the IP with docker inspect and put place the correct IP when I start the mm docker
+
+docker run -p 8000:8000 -e CLIENT_ID=admin-cli -e CLIENT_SECRET=L5zMxUyawvyt61v9yuf2P4t18hnhO2U3 -e URL_INTROESPECT=http://172.17.0.2:8080/realms/master/protocol/openid-connect/token/introspect -e URL_TOKEN=http://172.17.0.2:8080/realms/master/protocol/openid-connect/token/ -e URL_AGGREGATOR=http://localhost:8000/agregator matchmaker:v1.0
+
+

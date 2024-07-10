@@ -1,0 +1,91 @@
+name: mjpeg-ffmpeg-app
+description: "the description"
+namespace: demo-deployment-2
+components:
+- name: ffmpeg
+  type: kubernetes
+  manifests:
+  - name: ffmpeg-pod
+  requirements:
+    memory: 7Gi
+  policies:
+    - security: high
+
+- name: mjpeg
+  type: kubernetes
+  manifests:
+  - name: mjpeg-service
+  - name: mjpeg
+  requirements:
+    devices: squat.ai/video
+
+manifests:
+  -name: ffmpeg-pod
+  type: kubernetes
+  manifest:
+    apiVersion: v1
+    kind: Pod
+    metadata:
+      name: ffmpeg-pod
+      namespace: demo-deployment-2
+    spec:
+      containers:
+      - name: ffmpeg-container
+        image: santojim/ffmpeg
+        command:
+        - "ffmpeg"
+        args:
+        - "-i"
+        - "http://10.150.0.144:30674/mjpeg"
+        - "-fs"
+        - "100M"
+        - "-c:v"
+        - "copy"
+        - "video.mp4"
+        resources:
+          requests: 
+            memory: 7Gi
+
+  -name: mjpeg
+  type: kubernetes
+  manifest:
+    apiVersion: v1
+    kind: Pod
+    metadata:
+      name: mjpeg
+      namespace: demo-deployment-2
+    labels:
+      app.kubernetes.io/name: mjpeg
+    spec:
+      containers:
+      - name: kceu
+        image: santojim/camera_to_ip:amd64
+        command:
+        - /cam2ip
+        args:
+        - --bind-addr=:8080
+        ports:
+        - containerPort: 8080
+          name: http
+        resources:
+          limits:
+            squat.ai/video: 1
+  
+  -name: mjpeg-service
+  type: kubernetes
+  manifest:
+    apiVersion: v1
+    kind: Service
+    metadata:
+      name: mjpeg-service
+      namespace: demo-deployment-2
+    spec:
+      selector:
+        app.kubernetes.io/name: mjpeg
+      ports:
+      - protocol: TCP
+        port: 8080
+        targetPort: 8080
+        nodePort: 30674
+      type: NodePort
+
